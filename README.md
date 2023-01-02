@@ -5,7 +5,7 @@ HAPEBEAST & DISEL WAITLIST REGISTER
 
 
 
-Import your mails in rambler.txt
+Import your mails in mails.txt
 
 
 Write "pip install -r requirements.txt" in CMD
