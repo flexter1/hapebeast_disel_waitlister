@@ -4,11 +4,21 @@
 HAPEBEAST & DISEL WAITLIST REGISTER
 
 
-
-Import your mails in mails.txt
-
-
-Write "pip install -r requirements.txt" in CMD
+## Installation
+Import your mails in `mails.txt`
 
 
-Start the bot
+Enter in terminal:
+
+```
+pip install -r requirements.txt
+```
+
+Enjoy the work
+
+
+## Developers
+
+- [Flexter](https://github.com/flexter1)
+- 
+  [Telegram](https://t.me/flexterwork)
