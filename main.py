@@ -31,13 +31,11 @@ def register(rambler:str) -> None:
             'referer': 'https://hape.diesel.com/',
             'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
         }
-    
-        json_data = {
-            'email': rambler,
-        }
-    
-        response = requests.post('https://hape.diesel.com/ajax.php', headers=headers, json=json_data)
-        if response.json()['label']==5 and response.status_code==200:
+
+        data = f'action=register&email={rambler}'
+
+        response = requests.post('https://hape.diesel.com/api.php', headers=headers, data=data)
+        if response.json()['retcode']==0 and response.status_code==200:
             logger.success(f'Успешно зарегался | {rambler}')
     except Exception as exc:
         logger.error(exc)
