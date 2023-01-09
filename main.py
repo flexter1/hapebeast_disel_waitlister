@@ -13,24 +13,23 @@ logger.info("TELEGRAM CHANNEL https://t.me/flexterwork")
 def register(rambler:str) -> None:
     try:
         headers = {
-            'authority': 'hape.diesel.com',
-            'pragma': 'no-cache',
-            'cache-control': 'no-cache',
-            'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
-            'authorization': 'ajpsfa56456a4saoksfafa54654asjaijfaps',
-            'email': 'sergeev02as@gmail.com',
-            'sec-ch-ua-mobile': '?0',
-            'content-type': 'application/json',
-            'user-agent': UserAgent().random,
-            'sec-ch-ua-platform': '"Linux"',
-            'accept': '*/*',
-            'origin': 'https://hape.diesel.com',
-            'sec-fetch-site': 'same-origin',
-            'sec-fetch-mode': 'cors',
-            'sec-fetch-dest': 'empty',
-            'referer': 'https://hape.diesel.com/',
-            'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
-        }
+        'authority': 'hape.diesel.com',
+        'pragma': 'no-cache',
+        'cache-control': 'no-cache',
+        'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
+        'accept': '*/*',
+        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'x-requested-with': 'XMLHttpRequest',
+        'sec-ch-ua-mobile': '?0',
+        'user-agent': UserAgent().random,
+        'sec-ch-ua-platform': '"Linux"',
+        'origin': 'https://hape.diesel.com',
+        'sec-fetch-site': 'same-origin',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-dest': 'empty',
+        'referer': 'https://hape.diesel.com/',
+        'accept-language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+    }
 
         data = f'action=register&email={rambler}'
 
